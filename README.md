@@ -1,51 +1,46 @@
-# Street Interface Measurement — Nature 9.03 v0.7.1 UX
+## Scientific Baseline
 
-A research-oriented application for inspecting and validating the full Street Interface Measurement workflow.
+Current workflow candidate:
 
-## Purpose
+```text
+v0.7.1-UX1.3 FINAL UI CLEANUP CANDIDATE
+```
 
-This version is designed for researchers, planners, and technical users who need to see how the Street Interface score is produced.
+Base verified release:
 
-Unlike the public-facing application, this version exposes the analytical process, intermediate variables, formulas, and validation results.
+```text
+v0.7.0 RELEASE VERIFIED
+```
 
-## Required Inputs
+Scientific core:
 
-The application uses three main inputs:
+```text
+v0.6.3_GOLDEN_FREEZE
+```
 
-1. Original street-view image
-2. Semantic segmentation mask
-3. VLM-generated CSV file
+Deterministic validation:
 
-## Workflow
+```text
+66 / 66 PASS
+```
 
-The application presents the full analytical pipeline, including:
+The v0.7.1 UX update changes the interface and operator workflow only.
 
-- Street-view image input
-- Segmentation-based measurements
-- VLM data import
-- Nature 9.03 variables and formulas
+It does not modify the frozen Nature 9.03 scientific computation, Qwen mapping logic, GWR values, or the frozen Street Interface Matrix engine.
+
+## Street Interface Structure
+
+The current scientific synthesis follows the Nature 9.03 No-Omega framework.
+
+The interface exposes the three main dimensions:
+
 - Imageability
 - Identity
 - Dependence
-- Street Interface Matrix synthesis
-- Final Street Interface score
-- Validation and research diagnostics
 
-## Research Role
+These dimensions are combined by the frozen Street Interface synthesis engine to produce the final Street Interface score.
 
-This interface prioritizes methodological transparency and technical inspection.
-
-It is intended to support:
-
-- Research validation
-- Planning analysis
-- Method inspection
-- Reproducibility checks
-- Review of intermediate measurements
-
-## Scientific Baseline
-
-The application preserves the Nature 9.03 Street Interface Matrix research workflow and the frozen scientific calculation core used by the project.
+Omega is not active in the current scientific core, and no external environmental A_i term is active.
 
 ## Local Development
 
@@ -53,3 +48,103 @@ Install dependencies:
 
 ```bash
 npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+On Windows PowerShell, if script execution blocks `npm`, use:
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
+## Environment Variables
+
+The repository includes:
+
+```text
+.env.example
+```
+
+Do not commit a real `.env` file containing private API keys or credentials.
+
+For AI Studio / Gemini-related functions, configure the required secrets through the appropriate environment or secrets panel.
+
+## Repository Structure
+
+Key directories include:
+
+```text
+src/
+server/
+public/
+release/
+scripts/
+tool/
+```
+
+Key files include:
+
+```text
+package.json
+server.ts
+tsconfig.json
+vite.config.ts
+metadata.json
+.env.example
+```
+
+The `release/` directory contains release status, verification, integrity, and reproducibility records for the current research workflow.
+
+## Current Repository Status
+
+This repository represents the research / technical interface of the Street Interface project.
+
+Current status:
+
+```text
+WORKFLOW_CANDIDATE
+```
+
+Host lint / build validation:
+
+```text
+PENDING_USER_HOST_VALIDATION
+```
+
+Scientific change:
+
+```text
+false
+```
+
+Workflow change:
+
+```text
+true
+```
+
+## Relationship to the Public App
+
+This repository is the transparent research-oriented version of the Street Interface application.
+
+A separate public-facing application automates the full workflow from a single uploaded street photograph, including:
+
+- Vision segmentation
+- Qwen2-VL perceptual analysis
+- VLM visual commentary
+- Nature 9.03 Street Interface synthesis
+- Final Street Interface score
+
+This repository, by contrast, is designed to make the research process inspectable and auditable.
+
+## Notes
+
+The application is currently a research prototype and workflow candidate.
+
+Before treating the repository as a final production release, complete the remaining host lint / build validation and any additional project-specific acceptance checks.
